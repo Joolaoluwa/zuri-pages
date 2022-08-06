@@ -1,0 +1,280 @@
+/* globally removing all the padding and all margin in the elements */
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* resetting the viewport font-size */
+html{
+    font-size: 62.5%;
+}
+
+/* body styling */
+body{
+    line-height: 1.8;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+/* global styles */
+/* a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: grey;
+} */
+/* section 1 global styles */
+.section-1{
+    background-image: url(./images/hero-bg.svg);
+    height: 80rem;
+    /* width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.l-b-g{
+    font-size: 2.8rem;
+    margin: 0 0 3.6rem;
+    text-align: center;
+    color: grey;
+}
+.section-1-paragraph{
+    color: grey;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 0 1.6rem;
+}
+.section-1-content{
+    width: 100%;
+   margin: 0 auto; 
+   padding: 1rem;
+}
+.section-1-btn{
+    margin: 9.2rem 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* image in section 1 styling */
+.zuri-logo{
+    display: flex;
+    justify-content: center;
+    padding:6.9rem 0 0 ;
+    margin: 0 0 6.9rem;
+}
+/* links and button in section 1 styles */
+
+.beginner,.expert,.project-and-goals{
+    color: #EA514A;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.newbie,.need-experience{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.newbie-btn,.need-experience-btn{
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1.1rem 2.8rem;
+    border : #E7332B solid .1rem;
+    
+}
+.newbie-btn{
+    background-color: #E7332B;
+    color: white;
+    margin-bottom: 2rem;
+}
+.need-experience-btn{
+    text-decoration: none;
+    color : #E7332B;
+    border : #E7332B solid .1rem;
+    background-color: white;
+}
+
+.newbie-btn:hover{
+    background-color: white;
+    color: #E7332B;
+    transition: .25s all ease-in-out;
+}
+.need-experience-btn:hover{
+    background-color: #E7332B;
+    color: white;
+    transition: .25s all ease-in-out;
+}
+
+@media (min-width:900px){
+    .section-1-content{
+        width: 50%;
+    }
+    .section-1-paragraph{
+        width: 100%;
+    }
+    .section-1-btn{
+        margin: 9.2rem 0 0;
+        flex-direction: row;
+    }
+    .newbie-btn,.need-experience-btn{
+        margin: 0 2rem;
+    }
+}
+
+/* section 2 styles */
+.section-2-content{
+    padding: 0 1.5rem;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin: 2.4rem 0;
+    position: relative;
+}
+/* .section-2-cards{
+    padding: 0 1.5rem;
+} */
+.cards-image-1,.cards-2,.cards-image-3{
+margin: 1.5rem 0;
+
+}
+.cards-1-content,.cards-2-content,.cards-3-content{
+margin: 2.4rem 0;
+padding: 6.1rem 4.7rem 8.2rem 3.6rem;
+background-color: #FFFAFA;
+}
+/* text styles in section 2*/
+.small-heading{
+    color: #E7332B;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 14.1rem 0 .8rem;
+    font-weight: 100;
+}
+.slogan{
+    margin: .8rem 0 6.4rem;
+    font-size: 2.4rem;
+    color: grey;
+    text-align: center;
+}
+.cards-1-content-paragraph {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #514949;
+    opacity: .9;
+    margin: 0 0 1rem;
+}
+/* image styles in section 2 */
+.zuri-training{
+    margin: 0 0 4.8rem;
+}
+.image-1,.image-3{
+    display: none;
+}
+
+/* this media query was used in the section 2 to display the cards using the row value of flex-direction  with a width of 1000px*/
+@media (min-width:1000px){
+    .cards{
+        flex-direction: row;
+        margin: 0rem;
+    }
+    .cards-image-1,.cards-2,.cards-image-3{
+        margin: 0 1.5rem ;
+        
+        }
+        .flex-footer{
+            flex-direction: row;
+        }
+}
+
+@media (min-width:1200px){
+    .cards{
+        flex-direction: row;
+        margin: 0rem;
+    }
+    .cards-image-1,.cards-image-3{
+        display: flex;
+        position: relative;
+    }
+    .image-1,.image-3{
+        display: block;
+        position: absolute;
+        width: 35%;
+        z-index: -1;
+        overflow: hidden;
+        margin: 0 0 4.8rem;
+        top: -120px;
+        /* right: -75px; */
+    }
+}
+
+/* footer styles */
+footer{
+    margin-top: 21.5rem;
+}
+.flex-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 5.6rem;
+
+}
+.footer-1,.footer-2,
+.footer-3,.footer-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    margin: 1.6rem;
+}
+/* footer text styles */
+footer h3{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 2rem 0 .8rem;
+    color: #514949;
+}
+.link{
+    color: #E7332B;
+}
+footer p{
+    font-size: 1.6rem;
+    margin: 0 0 1.6rem;
+    color: #E7332B;
+}
+.location{
+    color: #514949;
+}
+.copyright{
+    font-size: 1.8rem;
+    margin: 3.2rem 0 1.6rem;
+    padding: 0 0 9.7rem;
+    font-weight: bold;
+    text-align: center;
+    color: #514949;
+}
+/* global links in the footer */
+a{
+    text-decoration: none;
+}
+/* contact icon in the footer */
+footer .social-media{
+    width: 100%;
+}
+.contact-icons a{
+    width: 10%;
+}
+
+@media (min-width:1000px){
+        
+        .flex-footer{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+}
